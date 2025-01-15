@@ -1,10 +1,12 @@
-import { View, Text, StyleSheet } from "react-native";
-import { theme } from "../theme"; // Adjust the import path as necessary
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import { theme } from '../../theme';
 
-export default function CompletedReminders() {
+export default function RemindersScreen() {
     return (
         <View style={styles.container}>
-            <Text>Completed Reminders</Text>
+        <Text>Reminder App</Text>
+        <StatusBar style="auto" />
         </View>
     );
 }
@@ -17,3 +19,4 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 });
+
